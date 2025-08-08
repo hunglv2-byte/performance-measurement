@@ -1,0 +1,22 @@
+{
+  "name": "k6-performance-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/k6": "^1.1.1"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "dayjs": "^1.11.13",
+    "dayjs-plugin-utc": "^0.1.2",
+    "timezone-support": "^3.1.0",
+    "utc": "^0.1.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "refresh": "5s",
+  "panels": [
+    {
+      "title": "Total time (ms)",
+      "type": "timeseries",
+      "gridPos": { "x": 0, "y": 0, "w": 12, "h": 8 },
+      "targets": [
+        {
+          "expr": "api_flow_time_seconds_sum",
+          "legendFormat": "Total time [searchClaims via Database]"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "s",
+          "color": { "mode": "palette-classic" }
+        }
+      }
+    }
+  ],
+  "title": "Measure API performance for search claims"
+}

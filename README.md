@@ -5,7 +5,8 @@
 `` node generate_data.js ``
 
 # Run SQL in docker
-` docker cp consumer.natural_persons.sql record-postgres15.12:/consumer.natural_persons.sql && docker exec -it record-postgres15.12 psql -U justincase -d record_db -f /consumer.natural_persons.sql `
+` export FILENAME="backup_20252508102700_data.sql" && docker cp "$FILENAME" record-postgres15.12:/"$FILENAME" && docker exec -it record-postgres15.12 psql -U justincase -d record_db -f /"$FILENAME" `
+
 
 #  Câu lệnh kiểm tra các truy vấn đang chạy
 `` SELECT pid,
